@@ -1,0 +1,62 @@
+/*! SASS #base base */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  //color: #D6A461;
+
+}
+
+a:hover {
+  text-decoration: underline;
+  //color: #462425;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.inherit {
+  list-style: inherit;
+
+}
+
+ul.inherit li {
+  /*list-style-image: url("../../dist/images/");*/
+  list-style-type: circle;
+}
+
+figure {
+  margin: 0;
+}
+
+i.icones {
+  font-family: fontawesome;
+  font-style: initial;
+
+}
+
+.i-drone {
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: top center, 120%, 100%;
+  display: block;
+  background-image: url("../images/drones.svg");
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}

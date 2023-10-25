@@ -1,0 +1,362 @@
+.menu-dropdown,
+.submenu {
+  list-style-type: none;
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+}
+
+/* Mobile menu */
+.menu-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-dropdown li a {
+  display: block;
+  padding: 15px 5px;
+  display: flex;
+
+}
+
+.submenu li.subitem a {
+  display: flex;
+  border-bottom: 1px solid #428bca;
+  margin: 0rem;
+
+
+  //padding: 15px;
+}
+
+.submenu li.subitem a:hover {
+  border-bottom: 5px solid #428bca;
+  color: #428bca;
+  transition: all 0.5s;
+
+}
+
+.submenu li.subitem:last-child a:hover {
+  border-bottom: 5px solid black;
+  color: #428bca;
+  transition: all 0.5s;
+
+}
+
+
+.active .item {
+  // display: block;
+}
+
+
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+  background-color: #F7F7F7;
+}
+
+.submenu-active .submenu {
+  display: block;
+}
+
+.has-submenu i {
+  font-size: 12px;
+}
+
+/*
+.has-submenu>a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  padding-left: 5px;
+}
+*/
+.subitem a {
+  padding: 10px 15px;
+}
+
+.submenu-active {
+  background-color: #428bca;
+  color: #111;
+  border-radius: 3px;
+}
+
+.has-submenu.submenu-active>a,
+.has-submenu.submenu-active>a:hover {
+  color: white !important;
+}
+
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+  .menu-dropdown {
+    // justify-content: center;
+  }
+
+
+
+
+
+
+}
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  .menu-dropdown {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+
+
+
+
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    color: #555555;
+    background-color: #F7F7F7;
+  }
+
+
+  .submenu-active {
+    border-radius: 0;
+  }
+}
+
+
+
+//Responsive navbar with dropdown menu 
+// Responsive Drop Down Menu with Sub Menu in HTML & CSS
+
+.navbar-brand {
+  font-size: 1.4em;
+}
+
+.navbar-dark .navbar-nav a.nav-link {
+  color: #ffffff;
+  font-size: 1.1em;
+}
+
+.dropdown-menu {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: none;
+  border-radius: 0;
+  padding: 0.7em;
+}
+
+@media only screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+
+  .dropdown-menu.show {
+    display: flex;
+  }
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu li .dropdown-item {
+  color: gray;
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+  // background-color: #f1f1f1;
+}
+
+.dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  //color: #516beb;
+}
+
+.dropdown-menu li:first-child a:hover {
+  // background-color: #f1f1f1;
+}
+
+
+
+@media only screen and (min-width:800px) and (max-width: 1140px) {
+  .dropdown:hover .dropdown-menu {
+    // width: 40vw;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  border: none;
+  padding: 0.5em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  //color: gray;
+  padding: 0.5em 1em;
+}
+
+.dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 1.1em;
+  //color: #516beb;
+  display: flex;
+  border-bottom: 1px solid grey;
+
+}
+
+@media screen and (min-width: 993px) {
+  .dropdown:hover .dropdown-menu {
+    //display: flex;
+  }
+
+  .dropdown-menu.show {
+    //display: flex;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown-menu.show {
+    // max-height: 60vh;
+    //overflow-y: scroll;
+  }
+}
+
+
+.dropdown-menu {
+  display: none;
+  color: white;
+  position: fixed;
+  //display: flex;
+  /* background: grey; */
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  /* border-radius: 0; */
+  /* border: none; */
+  padding: 0.5em;
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); */
+  background-color: #f1f1f1;
+  justify-content: space-evenly;
+  left: 0;
+  right: 0;
+
+  //display: flex; // show testing
+}
+
+.subitem-div {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  align-content: stretch;
+  flex-wrap: nowrap;
+}
+
+.subitem-div img {
+  width: 40px;
+}
+
+.dropdown-menu .subitem {
+  padding: 1rem;
+
+}
+
+//var(--main-color);
+//var(--cloud-color);
+//var(--audio-visuel-color);
+//var(--web-color);
+//var(--logiciel-color);
+//var(--design-color);
+//var(--telecom-color);
+
+.dropdown-menu {
+  &__cloud {
+    li:first-child a {
+      color: var(--cloud-color);
+      border-bottom: 1px solid var(--cloud-color);
+    }
+
+    a:hover {
+      color: var(--cloud-color) !important;
+    }
+
+  }
+
+  &__audio-visuel {
+    li:first-child a {
+      color: var(--audio-visuel-color);
+      border-bottom: 1px solid var(--audio-visuel-color);
+    }
+
+    a:hover {
+      color: var(--audio-visuel-color) !important;
+    }
+  }
+
+  &__web {
+    li:first-child a {
+      color: var(--web-color);
+      border-bottom: 1px solid var(--web-color);
+    }
+
+    a:hover {
+      color: var(--web-color) !important;
+    }
+  }
+
+  &__logiciel {
+    li:first-child a {
+      color: var(--logiciel-color);
+      border-bottom: 1px solid var(--logiciel-color);
+    }
+
+    a:hover {
+      color: var(--logiciel-color) !important;
+    }
+  }
+
+  &__design {
+    li:first-child a {
+      color: var(--design-color);
+      border-bottom: 1px solid var(--design-color);
+    }
+
+    a:hover {
+      color: var(--design-color) !important;
+    }
+  }
+
+  &__telecom {
+    li:first-child a {
+      color: var(--telecom-color);
+      border-bottom: 1px solid var(--telecom-color);
+    }
+
+    a:hover {
+      color: var(--telecom-color) !important;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+/* Feature
+/* ================== */
+.feature {
+  height: 60vh;
+  background-color: #fbfafc;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  //grid-template-columns: repeat(2, 600px);
+
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.learnmore {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.learnmore::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  //background: url(images/arrow.svg) center center no-repeat;
+  margin-left: 8px;
+}
+
+.illustration {
+  position: relative;
+  left: 9px;
+  width: 100%;
+  height: 100%;
+}
+
+.illustration2 {
+  position: relative;
+  right: 9px;
+  width: 100%;
+  height: 100%;
+}
+
+.illustration__team-web {
+  position: absolute;
+  //left: 120px;
+  //left: -80px;
+  //left: 100px;
+  bottom: calc(50% - 160px);
+  //left: 180px;
+  left: 150px;
+
+}
+
+.illustration__team-design {
+  position: absolute;
+  //left: -80px;
+  left: 150px;
+  //top: calc(60% - 160px);
+  top: calc(50% - 160px);
+
+}
+
+.illustration__team-cloud {
+  position: absolute;
+  //left: 300px;
+  left: -40px;
+  //top: calc(50% - 150px);
+  top: calc(50% - 210px);
+
+}
+
+.illustration__team-telecom {
+  position: absolute;
+  //left: 140px;
+  left: 60px;
+  bottom: calc(50% - 200px);
+}
+
+@media only screen and (max-width: 800px) {
+
+  .illustration,
+  .illustration2 {
+    visibility: hidden;
+  }
+
+  .illustration__team-web {
+    width: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: unset;
+  }
+
+  .illustration__team-design {
+    width: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: unset;
+  }
+
+  .illustration__team-cloud {
+    width: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: unset;
+  }
+
+  .illustration__team-telecom {
+    width: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: unset;
+
+  }
+}
+
+.space {
+  height: 200vw;
+}
+
+
+/*
+.top-banner-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center;
+}
+
+.top-banner-section .banner-text-div {
+  grid-area: 1/1/2/2;
+  grid-area: 1/1/2/2;
+  z-index: 1;
+  justify-content: center;
+  display: grid;
+  align-content: center;
+}
+
+.top-banner-section .banner-image-div {
+  grid-area: 1/1/2/2;
+}
+*/

@@ -1,0 +1,105 @@
+.item-map {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: box-shadow .3s;
+  margin-inline: 2rem;
+}
+
+.item-map:hover() {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  background-color: #fff
+}
+
+.item-map h4 {
+  margin: 1rem 0 .5rem
+}
+
+.item-map p {
+  margin: 0 0 1rem
+}
+
+.item-map img {
+  //width: calc(100% - 150px);
+  display: block
+}
+
+.map {
+  height: 50vh
+}
+
+
+
+@media only screen and (min-width: 1100px) {
+  .container-map {
+    display: grid;
+    grid-template-columns: 2fr 6fr
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    padding: 0 30px
+  }
+
+  .map {
+    background-color: #CCC;
+    position: sticky !important;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.marker {
+  transform: translate(-50%, calc(-100% - 10px));
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  text-transform: uppercase;
+
+
+}
+
+.marker::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #FFF;
+
+
+}
+
+// hide second marker display:none
+.marker:last-child {
+  visibility: hidden;
+}
+
+.marker.is-active {
+  //background-color: #5069ff;
+  //color: #FFF;
+  z-index: 300;
+  //text-transform: lowercase;
+}
+
+.marker.is-active::after {
+  //border-top-color: #5069ff;
+}
+
+
+
+.gm-style img {
+  max-width: none;
+  width: 200px;
+  margin: auto;
+  //display: none;
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services (accordeon) - Esi informatique</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--
+      Menu d'accessibilité utiliser la tabulation
+    -->
+    <ul class="a11y-nav">
+        <li><a href="#main">Main</a></li>
+    </ul>
+    <header class="header">
+        <div class="header-container__logo">
+            <a class="header__logo" href="index.html"><img src="./images/logo_esi.svg" alt=""></a>
+        </div>
+        <!--lg-visible-->
+        <nav class=" menu menu-burger   md-visible sm-visible xs-visible"  id="menu" >
+          <ul class="menu-level1">
+            <li><a href="" role="tab" class="menu-link" title="">la société</a></li>
+            <li style="display:none" class="item has-submenu">
+              <a href="#"  tabindex="0" class="menu-link" title="">services <i class="icones fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li class="subitem"><a href="https://www.esi-cloud.be/">cloud</a></li>
+                <li class="subitem"><a href="https://www.esi-av.be/">audio visuel</a></li>
+                <li class="subitem"><a href="https://www.esi-web.be/">web</a></li>
+                <li class="subitem"><a href="https://www.esi-gde.be/">logiciels</a></li>
+
+                <li class="subitem"><a href="https://www.esi-design.be/">design</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" class="menu-link nav-link dropdown-toggle" title="">services <i class="icones fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__cloud">
+                  <li class="subitem">
+                    <div class="subitem-div"><img src="./images/svg-cloud.svg" alt=""><a href="https://www.esi-cloud.be/">cloud</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/">Networking</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/solutions-serveur-et-reseau-pour-entreprise/">Serveur et réseau</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/materiel-depannage-informatique/">Dépannage</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/office-365/">Office 365</a></li>
+    
+                </ul>
+                <ul  class="dropdown-menu__audio-visuel">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-audiovisuel.svg" alt=""><a href="https://www.esi-av.be/">audio visuel</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/gamme-de-produits/">Gamme de produits</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/demonstration-formation-et-installation/">Matériels</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/centrale-marches-segec/">Centrale de marchés SEGEC</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/demonstration-formation-et-installation/">Catalogue des formations</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__web">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-web.svg" alt=""><a href="https://www.esi-web.be/">web</a></div>
+                  </li>
+
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/site-e-commerce/">E-commerce</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/site-wordpress/">Site vitrine </a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/application-web/">Application</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/mailing/">Mailing</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/referencement/">Référencement naturel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/hebergement-de-sites-internet/">Hébergement web</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__logiciel">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-logiciel.svg" alt=""><a href="https://www.esi-gde.be/">logiciels</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/flex-logistics/">Flex / Logistics</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/isabel/">Isabel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/sur-mesure/">Sur mesure</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/sage-bob-50/">Sage Bob 50</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/winbooks/">Winbooks</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/exact-cubic/">Exact Cubic</a></li>
+                </ul>
+                <ul class="dropdown-menu__design">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-design.svg" alt=""><a href="https://www.esi-design.be/">design</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/graphisme-et-logo/">Graphisme / Logo</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/print/">Print</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/photo/">Photo</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/video/">Vidéo</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__telecom">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-telecom.svg" alt=""><a href="https://www.esi-design.be/">telecom</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/verixi/">Connexion Internet</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/3cx/">Centrale Téléphonique</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/snom/">Matériel Professionnel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/sip-trunks/">SIP Trunks</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/mobile/">ESI Mobile</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li><a href="" role="tab" class="menu-link" title="">support</a></li>
+            <!--<li><a href="" role="tab" class="menu-link" title="">contact</a></li>-->
+            <li><a href="" role="tab" class="menu-link" title="">job</a></li>
+            <li><a href="" role="tab" class="menu-link" title="">boutique</a></li>
+            <li><a href="" role="tab" class="menu-link" title=""><i class="fa fa-search"></i></a></li>
+            <li><a href="" role="tab" class="btn-teamviewer" title="">Teamviewer</a></li>
+
+          </ul>
+        </nav>
+        <nav class="menu-mobile" >
+          <div class=" lg-hide sm-hide">
+              <div class="menu-slider toggle" id="trigger">
+                  <i class="fas fa-bars"> MENU</i>
+              </div>
+              <div id="triggered">
+                  <ul class="triggered-link">
+                    <li class="txt-right d-flex flex-just-end"><i class="fas fa-times" id="close"></i></li>
+                    <li><a href="" role="tab" class="menu-link" title="">la société</a></li>
+                    <li><a href="" role="tab" class="menu-link" title="">services</a></li>
+                    <li><a href="" role="tab" class="menu-link" title="">support</a></li>
+                    <!--<li><a href="" role="tab" class="menu-link" title="">contact</a></li>-->
+                    <li><a href="" role="tab" class="menu-link" title="">job</a></li>
+                    <li><a href="" role="tab" class="menu-link" title="">boutique</a></li>
+                    <li><a href="" role="tab" class="menu-link" title=""><i class="fa fa-search"></i></a></li>
+                    <li><a href="" role="tab" class="btn-teamviewer" title="">Teamviewer</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+    </header>
+    <span class="fill" style="width: 0%;"></span>
+
+    <main id="main" class="main container-grid">
+      <section>
+        <h1 class="h1">Bienvenue sur <strong class="txt-capitalize"><span class="txt-uppercase ">esi</span> informatique</strong></h1>
+        <p class="p__description">Vente et dépannage de matériel informatique, configuration de réseaux d'entreprise, création de votre site internet et logiciels de gestion sur Liège.</p>    
+        <div><a href="contact.html" class="btn-contact">Contactez-nous</a></div>
+        <hr class="separator-center">
+      </section> 
+     <section>
+      <h2 class="subtitle__services txt-uppercase">nos services</h2>
+        <hr class="separator-center-color">
+        <p class="p__description">Voici l’intégralité de nos services par départements afin de satisfaire au mieux vos besoins.</p>
+      <div id="accordionGroup" class="accordion">
+        <h3>
+          <button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="sect1" id="accordion1id">
+            <span class="accordion-title">
+              Networking & Matériel Informatique
+              <hr class="separator-start separator-start__cloud">
+              <span class="accordion-icon"></span>
+            </span>
+          </button>
+        </h3>
+        <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
+          <p>Le département Networking de ESI Informatique conçoit et gère pour vous une infrastructure sur mesure, souple et efficace.</p>
+          <div class="nav-pills-div nav-pills-div__cloud grid">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <i class="fa-server fa circle-no"></i>
+              <h4>Networking</h4>
+              <p>Consultance et conseil en gestion de parc informatique.</p>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <i class="fa-calendar-alt fa circle-no"></i>
+              <h4>Serveur et réseau</h4>
+              <p>Installation de réseaux et gestion de votre infrastructure.</p> 
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <i class="fa-truck-loading fa circle-no"></i>
+              <h4>Dépannage</h4>
+              <p>Dépannage à domicile ou en atelier de matériel informatique.</p> 
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <i class="fa-file-word fa circle-no"></i>
+              <h4>Office 365</h4>
+              <p>Office 365 pour votre privé et votre entreprise</p> 
+            </div>
+          </div> 
+        </div>
+        <h3>
+          <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id">
+            <span class="accordion-title">
+              Matériel Éducatif & Bureautique
+              <hr class="separator-start separator-start__audio-visuel">
+              <span class="accordion-icon"></span>
+            </span>
+          </button>
+        </h3>
+        <div id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+          <p>Actifs depuis 25 ans dans le domaine de l’informatique, nous nous sommes spécialisés ces dernières années dans l’installation de matériel éducatif interactif.</p>
+          <div class="nav-pills-div nav-pills-div__audio-visuel grid">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <!--<i class="fa-archive fa circle-no"></i>-->
+              <h4>Gamme de produits</h4>
+              <p>Tableaux interactifs, projecteurs interactifs, ecrans de projection et classes mobiles</p> 
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <!--<i class="fa-cogs fa circle-no"></i>-->
+              <h4>Matériels</h4>
+              <p>Démonstration, formation et installation du matériel éducatif &amp; bureautique. Service après-vente compris. </p> 
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <!--<i class=" fa-graduation-cap fa circle-no"></i>-->
+              <h4>Centrale de marchés SEGEC</h4>
+              <p>Les Technologies de l’Information et de la Communication pour l’Enseignement (TICE)</p> 
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <!--<i class=" fa-graduation-cap fa circle-no"></i>-->
+              <h4>Catalogue des formations</h4>
+              <p>Microsoft 365, teams, sharepoint, sway / yammer, windows, outils annexes</p> 
+            </div>
+          </div>
+        </div>
+        <h3>
+          <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id">
+            <span class="accordion-title">
+              Développement Web
+              <hr class="separator-start separator-start__web">
+              <span class="accordion-icon"></span>
+
+            </span>
+          </button>
+        </h3>
+        <div id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
+          <div>
+            <p>Nous nous occupons bien sûr de la création de sites web (page de redirection, site vitrine, e-commerce ou application).</p>
+            <div class="nav-pills-div nav-pills-div__web grid">
+  
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-shopping-cart fa circle-no"></i>
+                <h4>E-commerce</h4>
+                <p>PrestaShop présente en standard bon nombre de fonctionnalité nécessaire à votre commerce.</p> 
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-laptop fa circle-no"></i>
+                <h4>Site vitrine</h4>
+                <p>Conception  et développement de site WordPress.</p> 
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-tablet-alt fa circle-no"></i>
+                <h4>Application</h4>
+                <p>Développement mobile et création d'application sur mesure.</p>
+              </div> 
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-envelope-open-text fa circle-no"></i>
+                <h4>Mailing</h4>
+                <p>Types d’e-mails en masse : bulletins, courriels promotionnels, e-mails d’acquisition, e-mails de rétention</p> 
+       
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-bullhorn fa circle-no"></i>
+                <h4>Référencement naturel</h4>
+                <p>Optimisation pour les moteurs de recherche (SEO)</p> 
+              </div>
+ 
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-cloud fa circle-no"></i>
+                <h4>Hébergement web</h4>
+                <p>Solutions d’hébergement en fonction de vos besoins.</p> 
+              </div> 
+            </div>
+          </div>
+        </div>
+        <h3>
+          <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect4" id="accordion4id">
+            <span class="accordion-title">
+              logiciels de gestion
+              <hr class="separator-start separator-start__logiciel-gestion">
+              <span class="accordion-icon"></span>
+
+            </span>
+          </button>
+        </h3>
+        <div id="sect4" role="region" aria-labelledby="accordion4id" class="accordion-panel" hidden="">
+          <div>
+              <p>ESI informatique, votre partenaire pour les solutions sage bob50, winbooks, horus software, codabox, fid manager.</p>
+              <div class="nav-pills-div nav-pills-div__logiciel-gestion grid">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <!--<i class=" fa circle-no"></i>-->
+                  <h4>Flex / Logistics</h4>
+                  <p>Flex est le logiciel de gestion commerciale convivial, destiné aux petites et moyennes entreprises/industries (de tous secteurs).</p> 
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <!--<i class=" fa circle-no"></i>-->
+                  <h4>Isabel</h4>
+                  <p>Dans le cadre de la migration ISABEL 5 vers ISABEL 6, notre société a été agréée en tant que ISABEL INSTALLATION PARTNER.</p> 
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <!--<i class=" fa circle-no"></i>-->
+                  <h4>Sur mesure</h4>
+                  <p>ESI Informatique dispose de 2 analystes-programmeurs pour le développement de vos logiciels de gestion sur mesure.</p> 
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <!--<i class=" fa circle-no"></i>-->
+                  <h4>Sage Bob 50</h4>
+                  <p>La ligne BOB est une gamme de programmes de comptabilité et de gestion qui a été développée pour les PME et fiduciaires.</p> 
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <!--<i class=" fa circle-no"></i>-->
+                  <h4>Winbooks</h4>
+                  <p>Winbooks propose une gamme de logiciels comptables et de gestion commerciale.</p> 
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <!--<i class=" fa circle-no"></i>-->
+                  <h4>Exact Cubic</h4>
+                  <p>Exact Cubic pour Dos fut la première gamme de produits proposés par EXACT CUBIC.</p> 
+                </div>  
+              </div>
+            </div>
+        </div>
+        <h3>
+          <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect5" id="accordion5id">
+            <span class="accordion-title">
+              Design & Print
+              <hr class="separator-start separator-start__design-print">
+              <span class="accordion-icon"></span>
+
+            </span>
+          </button>
+        </h3>
+        <div id="sect5" role="region" aria-labelledby="accordion5id" class="accordion-panel" hidden="">
+          <div>
+            <p>Grâce à notre service Design & Print, nous créons votre image et vous gagnez en « Réputation » ! Bénéficiez de nos conseils en identité visuelle : ESI INFORMATIQUE concrétise vos idées et élabore tous vos supports de communication, de la conception graphique à la finalisation de votre projet.</p>
+            <div class="nav-pills-div nav-pills-div__design-print grid">
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-paint-brush fa circle-no"></i>
+                <h4>Graphisme / Logo</h4>
+                <p>Identité graphique et image de marque. Charte graphique complète.</p> 
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-map fa circle-no"></i>
+                <h4>Print</h4>
+                <p>Donner de l’impact à vos documents commerciaux et supports de communication.</p> 
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-camera fa circle-no"></i>
+                <h4>Photo</h4>
+                <p>Parce qu’une image parle plus qu’un long discours. </p> 
+              </div> 
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="fa-video fa circle-no"></i>
+                <h4>Vidéo</h4>
+                <p>Rien de plus explicite qu’une vidéo pour présenter votre entreprise!</p> 
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <i class="i-drone fa circle-no"></i>
+                <h4>Drone</h4>
+                <p>Opter pour la vidéo votre entreprise vue du ciel.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>
+          <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect6" id="accordion6id">
+            <span class="accordion-title">
+              Esi telecom
+              <hr class="separator-start separator-start__telecom">
+              <span class="accordion-icon"></span>
+            </span>
+          </button>
+        </h3>
+        <div id="sect6" role="region" aria-labelledby="accordion6id" class="accordion-panel" hidden="">
+          <div>
+              <p>Des solutions adaptées pour votre réseau ! De la téléphonie à la connexion internet, notre département vous propose un large panel de solutions.</p>
+              <div class="nav-pills-div nav-pills-div__telecom grid">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                  <i class="fa-wifi fa circle-no"></i>
+                  <h4>Connexion Internet</h4>
+                  <p>Partenaire Verixi</p>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                  <i class="fa-phone-alt fa circle-no"></i>
+                  <h4>Centrale Téléphonique</h4>
+                  <p>Partenaire 3CX, la communication</p> 
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                  <i class="fa-wrench fa circle-no"></i>
+                  <h4>Matériel Professionnel</h4>
+                  <p>Snom, les solutions IP</p> 
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                  <i class="fa-exchange-alt fa circle-no"></i>
+                  <h4>SIP Trunks</h4>
+                  <p>SIP Trunks, la téléphonie moderne</p> 
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                  <i class="fa-mobile-alt fa circle-no"></i>
+                  <h4>ESI Mobile</h4>
+                  <p>ESI Mobile, nos forfaits mobile </p> 
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+              
+     </section> 
+    </main>
+
+
+    <footer class="footer__container ">
+        <section>
+          <div class="header-container__logo">
+            <a class="header__logo" href="index.html"><img src="./images/logo_esi.svg" alt=""></a>
+          </div>
+          <hr class="separator-center">
+          <address class="grid">
+              <ul class="coordonnees col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                <li>
+                  <i class="fa-map-marker-alt fa circle-no"></i>
+                  <a href="" role="tab" class="menu-link" title="">Chaussée de Heusy 225 4800 Verviers</a>
+                </li>
+                <li>
+                  <i class="fa-phone-alt fa circle-no"></i>
+                  <a href="tel:087226060" role="tab" class="menu-link" title="">087 22 60 60</a>
+                </li>
+                <li>
+                  <i class="fa-at fa circle-no"></i>
+                  <a href="mailto:info@esi-informatique.com" target="_blank" rel="noopener" role="tab" class="menu-link" title="">info@esi-informatique.com</a>
+                </li>
+
+              </ul>
+              <ul class="social col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                <li><a href="" role="tab" class="menu-link" title=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="" role="tab" class="menu-link" title=""><i class="fa-brands fa-instagram"></i></a></li>
+
+              </ul>
+          </address>
+          
+        </section>
+        <div  style="background-color: #5b5b5b;width: 100%;height: 100px;">
+          <ul class="pictogramme "  >
+            <li><a href="" ><img src="./images/audiovisuel.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/web.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/boutique.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/cloud.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/comptabilite.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/logiciel-gestion.png" alt="" ></a></li>            
+            <li><a href="" ><img src="./images/design.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/digitalisation.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/education.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/office-desk.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/materiel.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/networking.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/telecom.png" alt="" ></a></li>
+            <li><a href="" ><img src="./images/wifi.png" alt="" ></a></li>
+          </ul>
+          
+        </div> 
+        <div class="">
+          <p class="copyright txt-center;"><strong>© 2023 Prototype dans le cadre du stage ESI Informatique Verviers.</strong></p>
+        </div>
+    </footer>
+    <scroll-top class="scroll-top" style="display: grid;">
+      <svg width="100%" height="100%" viewBox="0 0 7 5" xmlns="http://www.w3.org/2000/svg" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5; fill: none;">
+        <path d="M1,4l2.5,-3l2.5,3" stroke="#FFF" stroke-width="1.4"></path>
+      </svg>
+    </scroll-top>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/scrolltop.js"></script>
+    <script src="./scripts/accordeon.js"></script>
+
+</body>
+</html>

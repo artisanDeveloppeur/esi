@@ -1,0 +1,65 @@
+a.btn-teamviewer {
+  background-color: var(--main-color);
+  padding: 1rem;
+  color: #FFFFFF;
+}
+
+a.btn-teamviewer:hover {
+  background-color: var(--main-color);
+  padding: 1rem;
+  color: #FFFFFF;
+}
+
+.btn-contact {
+  border-bottom-color: var(--main-color);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-style: solid;
+  border-bottom-width: 1.81818px;
+  border-left-color: var(--main-color);
+  border-left-style: solid;
+  border-left-width: 1.81818px;
+  border-right-color: var(--main-color);
+  border-right-style: solid;
+  border-right-width: 1.81818px;
+  border-top-color: var(--main-color);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-style: solid;
+  border-top-width: 1.81818px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: var(--main-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: 44.6023px;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 17px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  outline-color: var(--main-color);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 12px;
+  position: relative;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+
+}
+
+//https://gist.github.com/domwashburn/d8835022db7414314faf#file-bem-buttons-html

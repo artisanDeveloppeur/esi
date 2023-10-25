@@ -1,0 +1,258 @@
+/*! SASS #components tabs */
+
+.tab a[aria-selected="true"] {
+  text-transform: uppercase;
+  color: white;
+}
+
+
+.tab {
+  margin-block: 3rem;
+
+  a {
+    font-family: Montserrat;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    text-transform: capitalize;
+    background-color: white;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+  }
+
+  i {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    letter-spacing: 3px;
+    line-height: 36px;
+    margin-block: 0.5em 1rem;
+    text-transform: capitalize;
+
+
+  }
+
+  h4 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    letter-spacing: -0.3px;
+    line-height: 24px;
+    margin-block: 1rem;
+    margin-bottom: 1rem;
+    margin-inline: 0px;
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    height: auto;
+    letter-spacing: 0.24px;
+    line-height: 25.8px;
+    margin-block: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.tab a.tabs-esi {
+  border-bottom: 5px solid grey;
+
+  &:hover {
+    //border-bottom: 5px solid white;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &[aria-selected="true"] {
+    background-color: grey;
+    //border-bottom: 5px solid white;
+    color: white;
+
+
+  }
+
+
+  &__cloud {
+    border-bottom: 5px solid var(--cloud-color);
+    color: var(--cloud-color);
+
+    &:hover {
+      background-color: var(--cloud-color);
+      //border-bottom: 5px solid white;
+      //color: white;
+    }
+  }
+
+  &__cloud[aria-selected="true"] {
+    background-color: var(--cloud-color);
+  }
+
+  &__audio-visuel {
+    border-bottom: 5px solid var(--audio-visuel-color);
+    color: var(--audio-visuel-color);
+
+    &:hover {
+      background-color: var(--audio-visuel-color);
+      //border-bottom: 5px solid white;
+      //color: white;
+    }
+  }
+
+  &__audio-visuel[aria-selected="true"] {
+    background-color: var(--audio-visuel-color);
+  }
+
+  &__web {
+    border-bottom: 5px solid var(--web-color);
+    color: var(--web-color);
+
+    &:hover {
+      background-color: var(--web-color);
+      //border-bottom: 5px solid white;
+      //color: white;
+    }
+  }
+
+  &__web[aria-selected="true"] {
+    background-color: var(--web-color);
+  }
+
+  &__logiciel-gestion {
+    border-bottom: 5px solid var(--logiciel-color);
+    color: var(--logiciel-color);
+
+    &:hover {
+      background-color: var(--logiciel-color);
+      //border-bottom: 5px solid white;
+      //color: white;
+    }
+  }
+
+
+  &__logiciel-gestion[aria-selected="true"] {
+    background-color: var(--logiciel-color);
+  }
+
+  &__design-print {
+    border-bottom: 5px solid var(--design-color);
+    color: var(--design-color);
+
+    &:hover {
+      background-color: var(--design-color);
+      //border-bottom: 5px solid white;
+      //color: white;
+    }
+  }
+
+  &__design-print[aria-selected="true"] {
+    background-color: var(--design-color);
+  }
+
+  &__telecom {
+    border-bottom: 5px solid var(--telecom-color);
+    color: var(--telecom-color);
+
+    &:hover {
+      background-color: var(--telecom-color);
+      //border-bottom: 5px solid white;
+      //color: white;
+    }
+  }
+
+  &__telecom[aria-selected="true"] {
+    background-color: var(--telecom-color);
+  }
+
+}
+
+
+.tab>div {
+  width: 100%;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.tab .nav-pills {
+  padding: 0;
+  display: flex;
+}
+
+
+.tab .nav-pills::before {
+  content: "";
+  //width: 0px;
+  //border-bottom: 5px solid gray;
+}
+
+.tab .nav-pills::after {
+  content: "";
+  /*flex: 1;*/
+  //border-bottom: 5px solid gray;
+}
+
+
+.nav-pills-div {
+  div {
+    //padding: 25px 25px 55px 25px;
+    padding-block: 25px;
+    padding-inline: 25px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.06);
+    text-align: center;
+
+  }
+
+
+
+  h4+p {
+    //display: none;
+    display: block;
+
+  }
+
+  &__cloud i {
+    color: var(--cloud-color);
+
+  }
+
+  &__audio-visuel i {
+    color: var(--audio-visuel-color);
+
+  }
+
+  &__web i {
+    color: var(--web-color);
+
+  }
+
+  &__logiciel i {
+    color: var(--logiciel-color);
+  }
+
+  &__design-print i {
+    color: var(--design-color);
+
+  }
+
+  &__telecom i {
+    color: var(--telecom-color);
+
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .tab .nav-pills {
+    flex-direction: column;
+  }
+}

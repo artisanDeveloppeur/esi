@@ -1,0 +1,47 @@
+// https://www.w3.org/WAI/ARIA/apg/patterns/
+
+// https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md#accordion---accord%C3%A9on
+
+/*
+Quand vous souhaitez afficher du texte uniquement aux technologies d'assistance, 
+vous pouvez passer par une suite de règles CSS. 
+L’idéal est de créer une classe dédiée, par exemple `sr-only` ou `visually-hidden`.
+*/
+.sr-only {
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+
+}
+
+.a11y-nav {
+  position: absolute;
+  top: -10em;
+  z-index: 100;
+  width: 100%;
+  margin-block: 1.5rem 0;
+}
+
+.a11y-nav a {
+  background-color: #fff;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+.a11y-nav a:focus,
+.a11y-nav a:hover {
+  top: 10em;
+  text-decoration: none;
+}

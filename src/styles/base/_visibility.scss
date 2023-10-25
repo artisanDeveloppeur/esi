@@ -1,0 +1,63 @@
+/*! SASS #base visibilty */
+
+
+
+@media screen and (min-width: 0) {
+  .xs-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .sm-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .md-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lg-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .xl-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 0) {
+  .xs-visible {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sm-visible {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .md-visible {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .lg-visible {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .xl-visible {
+    display: none !important;
+  }
+}

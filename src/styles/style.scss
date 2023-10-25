@@ -1,0 +1,77 @@
+/*! SASS #style main */
+@charset "UTF-8";
+
+@import "./vendors/_variable.scss";
+@import "./vendors/_fontawesome.scss";
+@import "./vendors/_font.scss";
+
+@import "./themes/_light-style.scss";
+@import "./themes/_dark-style.scss";
+
+@import "./base/_accessibilite.scss";
+@import "./base/_base.scss";
+@import "./base/_reset.scss";
+@import "./base/_typography.scss";
+@import "./base/_grid.scss";
+@import "./base/_boxes.scss";
+@import "./base/_visibility.scss";
+
+
+//@import "./layout/_.scss";
+@import "./layout/_header.scss";
+@import "./layout/_submenu.scss";
+@import "./layout/_main.scss";
+
+
+// components css
+
+@import "./components/_animation.scss";
+@import "./components/_button.scss";
+@import "./components/_dropdown.scss";
+@import "./components/_bannerscrolling.scss";
+
+// components css + js
+@import "./components/_slider.scss";
+@import "./components/_modals.scss";
+@import "./components/_tabs.scss";
+@import "./components/_tooltip.scss";
+@import "./components/_scrolltop.scss";
+@import "./components/_parallaxe.scss";
+@import "./components/_scrollspy.scss";
+@import "./components/_map.scss";
+@import "./components/_spotlight.scss";
+
+/**/
+@import "./components/_accordeon.scss";
+
+/* with js */
+@import "./components/_progressbar.scss";
+@import "./components/_combobox.scss";
+@import "./components/_switch.scss";
+@import "./components/_alert.scss";
+
+
+
+//@import "./pages/_.scss";
+.templates div {
+  margin: auto;
+}
+
+.templates a {
+  //color: #428bca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfafc;
+  width: 10rem;
+  height: 5rem;
+  text-transform: uppercase;
+}
+
+
+
+.templates a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}

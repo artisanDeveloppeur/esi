@@ -1,0 +1,41 @@
+:root {
+  --basic-combobox: grey;
+
+}
+
+.combobox {
+  padding: 8px;
+  //border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid #30303080;
+  outline: none;
+  width: 15rem;
+}
+
+.combobox:focus {
+  border: 1px solid #30303080;
+
+}
+
+.combolist {
+  display: none;
+  border: 1px solid #30303080;
+
+}
+
+.combolist.show {
+  display: block;
+  border-radius: 0px 0px 8px 8px;
+  width: 15rem;
+
+}
+
+.combolist .option {
+  padding: 8px;
+}
+
+.combolist .option:hover {
+  cursor: pointer;
+  background-color: var(--basic-combobox);
+  color: white;
+}

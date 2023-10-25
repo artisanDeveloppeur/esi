@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Esi informatique</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--
+      Menu d'accessibilité utiliser la tabulation
+    -->
+    <ul class="a11y-nav">
+        <li><a href="#main">Main</a></li>
+    </ul>
+    <header class="header">
+        <div class="header-container__logo">
+            <a class="header__logo" href="index.html"><img src="./images/logo_esi.svg" alt=""></a>
+        </div>
+        <!--lg-visible-->
+        <nav class=" menu menu-burger   md-visible sm-visible xs-visible"  id="menu" >
+          <ul class="menu-level1">
+            <li><a href="" role="tab" class="menu-link" title="index.html">la société</a></li>
+            <li class="item has-submenu">
+              <a href="#"  tabindex="0" class="menu-link" title="">Départements <i class="icones fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li class="subitem"><a href="scrollspy.html"  target="_blank">Scroll</a></li>
+                <li class="subitem"><a href="tabs.html"  target="_blank">Onglets</a></li>
+                <li class="subitem"><a href="accordeon.html"  target="_blank">Accordéon</a></li>
+              </ul>
+            </li>
+            <!-- mega menu-->
+            <li class="nav-item dropdown">
+              <a href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" class="menu-link nav-link dropdown-toggle" title="">services <i class="icones fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__cloud">
+                  <li class="subitem">
+                    <div class="subitem-div"><img src="./images/svg-cloud.svg" alt=""><a href="https://www.esi-cloud.be/">cloud</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/">Networking</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/solutions-serveur-et-reseau-pour-entreprise/">Serveur et réseau</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/materiel-depannage-informatique/">Dépannage</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/office-365/">Office 365</a></li>
+    
+                </ul>
+                <ul  class="dropdown-menu__audio-visuel">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-audiovisuel.svg" alt=""><a href="https://www.esi-av.be/">audio visuel</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/gamme-de-produits/">Gamme de produits</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/demonstration-formation-et-installation/">Matériels</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/centrale-marches-segec/">Centrale de marchés SEGEC</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/demonstration-formation-et-installation/">Catalogue des formations</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__web">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-web.svg" alt=""><a href="https://www.esi-web.be/">web</a></div>
+                  </li>
+
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/site-e-commerce/">E-commerce</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/site-wordpress/">Site vitrine </a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/application-web/">Application</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/mailing/">Mailing</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/referencement/">Référencement naturel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/hebergement-de-sites-internet/">Hébergement web</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__logiciel">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-logiciel.svg" alt=""><a href="https://www.esi-gde.be/">logiciels</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/flex-logistics/">Flex / Logistics</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/isabel/">Isabel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/sur-mesure/">Sur mesure</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/sage-bob-50/">Sage Bob 50</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/winbooks/">Winbooks</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/exact-cubic/">Exact Cubic</a></li>
+                </ul>
+                <ul class="dropdown-menu__design">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-design.svg" alt=""><a href="https://www.esi-design.be/">design</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/graphisme-et-logo/">Graphisme / Logo</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/print/">Print</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/photo/">Photo</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/video/">Vidéo</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__telecom">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-telecom.svg" alt=""><a href="https://www.esi-design.be/">telecom</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/verixi/">Connexion Internet</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/3cx/">Centrale Téléphonique</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/snom/">Matériel Professionnel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/sip-trunks/">SIP Trunks</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/mobile/">ESI Mobile</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li><a href="politique-environnementale.html" role="tab" class="menu-link" title="">Politique environnementale</a></li>
+            <li><a href="contact.html" role="tab" class="menu-link" title="">Contact</a></li>
+            <li><a href="#" title="Faire ctrl + k pour faire apparaître une modale" role="tab" class="menu-link" title=""><i class="fa fa-search"></i></a></li>
+            <li><a href="" role="tab" class="btn-teamviewer" title="">Teamviewer</a></li>
+
+          </ul>
+        </nav>
+        <nav class="menu-mobile" >
+          <div class=" lg-hide sm-hide">
+              <div class="menu-slider toggle" id="trigger">
+                  <i class="fas fa-bars"> MENU</i>
+              </div>
+              <div id="triggered">
+                  <ul class="triggered-link">
+                    <li class="txt-right d-flex flex-just-end"><i class="fas fa-times" id="close"></i></li>
+                    <li><a href="" role="tab" class="menu-link" title="">la société</a></li>
+                    <li><a href="scrollspy.html"  target="_blank">Scroll</a></li>
+                    <li><a href="tabs.html"  target="_blank">Onglets</a></li>
+                    <li><a href="accordeon.html"  target="_blank">Accordéon</a></li>
+                    <li><a href="politique-environnementale.html" role="tab" class="menu-link" title="">Politique environnementale</a></li>
+                    <li><a href="contact.html" role="tab" class="menu-link" title="">contact</a></li>
+                    <li><a href="" role="tab" class="menu-link" title=""><i class="fa fa-search"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+    </header>
+    <span class="fill" style="width: 0%;"></span>
+
+    <main id="main" class="main container-grid">
+      <section>
+        <h1 class="h1">Bienvenue sur <strong class="txt-capitalize"><span class="txt-uppercase ">esi</span> informatique</strong></h1>
+        <p class="p__description">Vente et dépannage de matériel informatique, configuration de réseaux d'entreprise, création de votre site internet et logiciels de gestion sur Liège.</p>    
+        <div><a href="contact.html" class="btn-contact">Contactez-nous</a></div>
+        <hr class="separator-center">
+        <h2 class="subtitle__services txt-uppercase">nos départements</h2>
+        <hr class="separator-center-color">
+        <h2  class="txt-center" >chez <strong>ESI <span class="txt-type" data-wait="3000" data-words='["Audiovisuel", "Web", "Cloud", "Telecom"]'></span></strong></h2>
+      </section>
+        
+       
+
+
+
+        
+      <div class="templates grid">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <a href="scrollspy.html">scrollspy</a>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <a href="tabs.html">tabs</a>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <a href="accordeon.html">accordeon</a>
+          </div>
+      </div> 
+    </main>
+
+      <section class="feature" style="overflow: hidden;">
+
+        
+        <div class="illustration">
+          <img src="./images/team-design.png" data-parallax='{"y": 0.2, "r": 0.02}'  
+          alt="" width="180" height="371" class="illustration__team-design" >
+          <img src="./images/team-web.png" data-parallax='{"y": -0.2, "r": 0.02}' 
+          alt="" width="180" height="313" class="illustration__team-web" >
+
+        </div>
+
+        </div>
+        <div>
+            <h2 class="title">Discutons ensemble de <strong>votre projet</strong> </h2>
+            <p class="p__description">Chaque projet est différent.  Nous sommes là pour vous accompagner à chacune des étapes afin de satisfaire au mieux vos besoins.</p>
+            <div><a href="contact.html" class="btn-contact">Contactez-nous</a></div>
+        </div>
+        <div class="illustration2">
+  
+          <img src="./images/team-cloud.png" data-parallax='{"y": 0.2, "r": 0.02}' 
+          alt="" width="180" height="313" class="illustration__team-cloud">
+          <img src="./images/team-telecom.png" data-parallax='{"y": -0.2, "r": 0.02}'  
+          alt="" width="180" height="371" class="illustration__team-telecom" >
+
+        </div>
+      </section>
+
+    <footer class="footer__container ">
+        <section>
+          <div class="header-container__logo">
+            <a class="header__logo" href="index.html"><img src="./images/logo_esi.svg" alt=""></a>
+          </div>
+          <hr class="separator-center">
+          <address class="grid">
+              <ul class="coordonnees col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                <li>
+                  <i class="fa-map-marker-alt fa circle-no"></i>
+                  <a href="" role="tab" class="menu-link" title="">Rue de ....</a>
+                </li>
+                <li>
+                  <i class="fa-phone-alt fa circle-no"></i>
+                  <a href="tel:0xxxxxxxxxx" role="tab" class="menu-link" title="">0xx xx xx xx</a>
+                </li>
+                <li>
+                  <i class="fa-at fa circle-no"></i>
+                  <a href="mailto:xxx@esi-informatique.com" target="_blank" rel="noopener" role="tab" class="menu-link" title="">xxxx@informatique.com</a>
+                </li>
+
+              </ul>
+              <ul class="social col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                <li><a href="" role="tab" class="menu-link" title=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="" role="tab" class="menu-link" title=""><i class="fa-brands fa-instagram"></i></a></li>
+
+              </ul>
+          </address>
+          
+        </section>
+        <div class="logo-slider">
+    
+          <div>
+            <img src="./images/audiovisuel.png" alt="" >
+            <img src="./images/web.png" alt="" >
+            <img src="./images/boutique.png" alt="" >
+            <img src="./images/cloud.png" alt="" >
+            <img src="./images/comptabilite.png" alt="" >
+            <img src="./images/logiciel-gestion.png" alt="" >
+            <img src="./images/design.png" alt="" >
+            <img src="./images/digitalisation.png" alt="" >
+            <img src="./images/education.png" alt="" >
+            <img src="./images/office-desk.png" alt="" >
+            <img src="./images/materiel.png" alt="" >
+            <img src="./images/networking.png" alt="" >
+            <img src="./images/telecom.png" alt="" >
+            <img src="./images/wifi.png" alt="" >
+           </div>
+    
+           <div>
+            <img src="./images/audiovisuel.png" alt="" >
+            <img src="./images/web.png" alt="" >
+            <img src="./images/boutique.png" alt="" >
+            <img src="./images/cloud.png" alt="" >
+            <img src="./images/comptabilite.png" alt="" >
+            <img src="./images/logiciel-gestion.png" alt="" >
+            <img src="./images/design.png" alt="" >
+            <img src="./images/digitalisation.png" alt="" >
+            <img src="./images/education.png" alt="" >
+            <img src="./images/office-desk.png" alt="" >
+            <img src="./images/materiel.png" alt="" >
+            <img src="./images/networking.png" alt="" >
+            <img src="./images/telecom.png" alt="" >
+            <img src="./images/wifi.png" alt="" >
+           </div>
+           
+           
+        </div>
+
+        <div class="">
+          <p class="copyright txt-center;"><strong>© 2023 Prototype dans le cadre du stage ESI Informatique Verviers.</strong></p>
+        </div>
+    </footer>
+    <scroll-top class="scroll-top" style="display: grid;">
+      <svg width="100%" height="100%" viewBox="0 0 7 5" xmlns="http://www.w3.org/2000/svg" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5; fill: none;">
+        <path d="M1,4l2.5,-3l2.5,3" stroke="#FFF" stroke-width="1.4"></path>
+      </svg>
+    </scroll-top>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/submenu.js"></script>
+    <script src="./scripts/scrolltop.js"></script>
+    <script src="./scripts/typewriter.js"></script>
+    <script src="./scripts/parallaxe.js" defer></script>
+    <script src="./scripts/spotlight.js" defer></script>
+    <spotlight-bar target=".dropdown-menu a"></spotlight-bar>
+
+</body>
+</html>

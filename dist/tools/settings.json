@@ -1,0 +1,47 @@
+    //Extension à installer Visual studio code + config sass
+    /*
+
+Live Sass Compiler
+v6.0.5
+Glenn Marks
+1,118,559
+(52)
+Compile Sass or Scss to CSS at realtime.
+Live Server
+v5.7.9
+Ritwick Dey
+36,757,625
+(449)
+Launch a development local Server with live reload feature for static & dynamic pages
+    */
+    /*
+{
+  "workbench.colorTheme": "Default Dark+",
+  "editor.formatOnSave": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "remoteHub.commitDirectlyWarning": "off",
+  "liveSassCompile.settings.formats.generateMap": true,
+  "liveSassCompile.settings.formats": [
+
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../../dist/styles/"
+    },
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../../dist/styles/"
+    }
+  ],
+  "editor.tabSize": 2,
+  "[html]": {
+    "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+  },
+  "editor.matchBrackets": "never",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.ignoreMissingGitWarning": true,
+  "window.menuBarVisibility": "compact",
+  //"prettier.printWidth": 999999999
+}
+*/
