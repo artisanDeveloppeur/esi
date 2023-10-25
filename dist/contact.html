@@ -38,21 +38,94 @@ p {
         <!--lg-visible-->
         <nav class=" menu menu-burger   md-visible sm-visible xs-visible"  id="menu" >
           <ul class="menu-level1">
-            <li><a href="" role="tab" class="menu-link" title="">la société</a></li>
+            <li><a href="index.html" role="tab" class="menu-link" title="">la société</a></li>
             <li class="item has-submenu">
-              <a href="#"  tabindex="0" class="menu-link" title="">services <i class="icones fa-chevron-down"></i></a>
+              <a href="#"  tabindex="0" class="menu-link" title="">Départements <i class="icones fa-chevron-down"></i></a>
               <ul class="submenu">
-                <li class="subitem"><a href="#">Design</a></li>
-                <li class="subitem"><a href="#">Development</a></li>
-                <li class="subitem"><a href="#">SEO</a></li>
-                <li class="subitem"><a href="#">Copywriting</a></li>
+                <li class="subitem"><a href="scrollspy.html"  target="_blank">Scroll</a></li>
+                <li class="subitem"><a href="tabs.html"  target="_blank">Onglets</a></li>
+                <li class="subitem"><a href="accordeon.html"  target="_blank">Accordéon</a></li>
               </ul>
             </li>
-            <li><a href="" role="tab" class="menu-link" title="">support</a></li>
-            <!--<li><a href="" role="tab" class="menu-link" title="">contact</a></li>-->
-            <li><a href="" role="tab" class="menu-link" title="">job</a></li>
-            <li><a href="" role="tab" class="menu-link" title="">boutique</a></li>
-            <li><a href="" role="tab" class="menu-link" title=""><i class="fa fa-search"></i></a></li>
+            <!-- mega menu-->
+            <li class="nav-item dropdown">
+              <a href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" class="menu-link nav-link dropdown-toggle" title="">services <i class="icones fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__cloud">
+                  <li class="subitem">
+                    <div class="subitem-div"><img src="./images/svg-cloud.svg" alt=""><a href="https://www.esi-cloud.be/">cloud</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/">Networking</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/solutions-serveur-et-reseau-pour-entreprise/">Serveur et réseau</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/materiel-depannage-informatique/">Dépannage</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-cloud.be/office-365/">Office 365</a></li>
+    
+                </ul>
+                <ul  class="dropdown-menu__audio-visuel">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-audiovisuel.svg" alt=""><a href="https://www.esi-av.be/">audio visuel</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/gamme-de-produits/">Gamme de produits</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/demonstration-formation-et-installation/">Matériels</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/centrale-marches-segec/">Centrale de marchés SEGEC</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-av.be/demonstration-formation-et-installation/">Catalogue des formations</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__web">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-web.svg" alt=""><a href="https://www.esi-web.be/">web</a></div>
+                  </li>
+
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/site-e-commerce/">E-commerce</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/site-wordpress/">Site vitrine </a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/application-web/">Application</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/mailing/">Mailing</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/referencement/">Référencement naturel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-web.be/hebergement-de-sites-internet/">Hébergement web</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__logiciel">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-logiciel.svg" alt=""><a href="https://www.esi-gde.be/">logiciels</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/flex-logistics/">Flex / Logistics</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/isabel/">Isabel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-gestion/sur-mesure/">Sur mesure</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/sage-bob-50/">Sage Bob 50</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/winbooks/">Winbooks</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-informatique.com/logiciels-comptable/exact-cubic/">Exact Cubic</a></li>
+                </ul>
+                <ul class="dropdown-menu__design">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-design.svg" alt=""><a href="https://www.esi-design.be/">design</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/graphisme-et-logo/">Graphisme / Logo</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/print/">Print</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/photo/">Photo</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-design.be/video/">Vidéo</a></li>
+    
+                </ul>
+                <ul class="dropdown-menu__telecom">
+                  <li class="subitem">
+                    
+                    <div class="subitem-div"><img src="./images/svg-telecom.svg" alt=""><a href="https://www.esi-design.be/">telecom</a></div>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/verixi/">Connexion Internet</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/3cx/">Centrale Téléphonique</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/snom/">Matériel Professionnel</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/sip-trunks/">SIP Trunks</a></li>
+                  <li><a class="dropdown-item" href="https://www.esi-telecom.be/mobile/">ESI Mobile</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li><a href="politique-environnementale.html" role="tab" class="menu-link" title="">Politique environnementale</a></li>
+            <li><a href="contact.html" role="tab" class="menu-link" title="">Contact</a></li>
+            <li><a href="#" title="Faire ctrl + k pour faire apparaître une modale" role="tab" class="menu-link" title=""><i class="fa fa-search"></i></a></li>
             <li><a href="" role="tab" class="btn-teamviewer" title="">Teamviewer</a></li>
 
           </ul>
@@ -66,17 +139,16 @@ p {
                   <ul class="triggered-link">
                     <li class="txt-right d-flex flex-just-end"><i class="fas fa-times" id="close"></i></li>
                     <li><a href="" role="tab" class="menu-link" title="">la société</a></li>
-                    <li><a href="" role="tab" class="menu-link" title="">services</a></li>
-                    <li><a href="" role="tab" class="menu-link" title="">support</a></li>
-                    <!--<li><a href="" role="tab" class="menu-link" title="">contact</a></li>-->
-                    <li><a href="" role="tab" class="menu-link" title="">job</a></li>
-                    <li><a href="" role="tab" class="menu-link" title="">boutique</a></li>
+                    <li><a href="scrollspy.html"  target="_blank">Scroll</a></li>
+                    <li><a href="tabs.html"  target="_blank">Onglets</a></li>
+                    <li><a href="accordeon.html"  target="_blank">Accordéon</a></li>
+                    <li><a href="politique-environnementale.html" role="tab" class="menu-link" title="">Politique environnementale</a></li>
+                    <li><a href="contact.html" role="tab" class="menu-link" title="">contact</a></li>
                     <li><a href="" role="tab" class="menu-link" title=""><i class="fa fa-search"></i></a></li>
-                    <li><a href="" role="tab" class="btn-teamviewer" title="">Teamviewer</a></li>
                   </ul>
               </div>
           </div>
-      </nav>
+        </nav>
 
     </header>
     <span class="fill" style="width: 0%;"></span>
@@ -87,10 +159,7 @@ p {
       <div class="container-map ">
 
         <div class="list nos-artisans"> 
-          <!--
-          <div class="item-map js-marker__esi-informatique js-marker" data-lat="50.583451330426826" data-lng="5.865662895536626" data-name="Esi informatique" >
-          https://www.coordonnees-gps.fr/carte/pays/BE coordonnees latitude longitude 
-          -->
+
           <div class="item-map js-marker__esi-informatique js-marker" data-lat="50.583451330426826" data-lng="5.865662895536626" data-name="Esi informatique" >
             <img class="logo-artisan" src="./images/esi-batiment.svg" alt="">
             <h4 class="txt-uppercase">esi informatique</h4>
@@ -114,28 +183,18 @@ p {
       
       </div>
       <section class="">
-        <!--
-          container-grid
-        <h2 class="txt-center">Voici les Artisans</h2>
-        <h3 class="txt-center">qui nous nourrissent au quotidien pour que nous puissons construire vos projets</h3>
- 
-        <p class=" artisan_title txt-center">Voici les <strong> Artisans</strong> qui nous nourrissent <br/><strong>au quotidien</strong> pour que nous puissons construire vos <strong> projets</strong></p>
 
-        -->
         <p class=" artisan_title txt-center">Grâce aux <strong> Artisans</strong> proche de nous et leurs produits de qualité,
           <br/> nous avons l'énergie pour construire vos <strong> projets</strong>  les plus fou !</p>
         <div class="artisans grid">  
-          <!-- class="item-map  js-marker" data-lat="50.5880621" data-lng="5.8640062" data-name="Boulangerie-Pâtisserie Maquinay"-->
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" >
             <h4>Boulangerie-Pâtisserie Maquinay</h4>
             <p>Où nous allons chercher notre <strong>pain presque quotidiennement</strong> ?</p> 
           </div>         
-          <!-- class="item-map  js-marker" data-lat="50.5830851" data-lng="5.8658184" data-name="Boucherie Bourguignon" -->
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" >
             <h4>Boucherie Bourguignon</h4>
             <p>Où nous allons chercher notre <strong>charcuterie et fromage</strong> tous les jours ?</p> 
           </div>
-          <!-- class="item-map  js-marker" data-lat="50.5840879" data-lng="5.8650094" data-name="Au P'tit Marmiton" -->
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" >
             <h4>Au P'tit Marmiton</h4>
             <p>Où nous allons chercher nos <strong>repas chauds</strong> le vendredi midi ?</p> 
@@ -152,29 +211,7 @@ p {
             <a class="header__logo" href="index.html"><img src="./images/logo_esi.svg" alt=""></a>
           </div>
           <hr class="separator-center">
-          <address class="grid">
-              <ul class="coordonnees col-xl-10 col-lg-10 col-md-10 col-sm-10">
-                <li>
-                  <i class="fa-map-marker-alt fa circle-no"></i>
-                  <a href="" role="tab" class="menu-link" title="">Rue xxxxxx</a>
-                </li>
-                <li>
-                  <i class="fa-phone-alt fa circle-no"></i>
-                  <a href="tel:087226060" role="tab" class="menu-link" title="">0xxxxxxxxx</a>
-                </li>
-                <li>
-                  <i class="fa-at fa circle-no"></i>
-                  <a href="mailto:xxxxx@xxxx-informatique.com" target="_blank" rel="noopener" role="tab" class="menu-link" title="">xxx@xxxxx-informatique.com</a>
-                </li>
 
-              </ul>
-              <ul class="social col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                <li><a href="" role="tab" class="menu-link" title=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="" role="tab" class="menu-link" title=""><i class="fa-brands fa-instagram"></i></a></li>
-
-              </ul>
-          </address>
-          
         </section>
         <div  style="background-color: #5b5b5b;width: 100%;height: 100px;">
           <ul class="pictogramme "  >
@@ -207,10 +244,10 @@ p {
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/submenu.js"></script>
     <script src="./scripts/scrolltop.js"></script>
-
     <script src="./scripts/vendors-map.js"></script>
     <script src="./scripts/map.js"></script>
-
+    <script src="./scripts/spotlight.js" defer></script>
+    <spotlight-bar target=".dropdown-menu a"></spotlight-bar>
 </body>
 </html>
 
